@@ -102,14 +102,53 @@ const Navbar = () => {
         <div>
           <ul className='hidden md:flex gap-4 lg:gap-6 xl:gap-8 items-center'>
             {navItems.map((item) => (
-              <li key={item.name}>
-                <a 
-                  href={item.href}
-                  onClick={item.onClick}
-                  className='text-gray-700 hover:text-[#0075bb] font-medium transition-colors duration-300 cursor-pointer text-sm lg:text-base whitespace-nowrap'
-                >
-                  {item.name}
-                </a>
+              <li
+                key={item.name}
+                className='relative'
+                onMouseEnter={() => item.hasDropdown && setActiveDropdown(item.name)}
+                onMouseLeave={() => item.hasDropdown && setActiveDropdown(null)}
+              >
+                {item.hasDropdown ? (
+                  <div className='relative'>
+                    <button
+                      className='flex items-center space-x-1 text-gray-700 hover:text-[#0075bb] font-medium transition-colors duration-300 cursor-pointer text-sm lg:text-base whitespace-nowrap'
+                    >
+                      <span>{item.name}</span>
+                      <ChevronDown className='w-4 h-4' />
+                    </button>
+
+                    <AnimatePresence>
+                      {activeDropdown === item.name && (
+                        <motion.div
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: 10 }}
+                          transition={{ duration: 0.2 }}
+                          className='absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-gray-100 py-4 z-50'
+                        >
+                          {item.dropdownItems?.map((dropdownItem) => (
+                            <Link
+                              key={dropdownItem.name}
+                              to={dropdownItem.href}
+                              className='block px-6 py-3 text-gray-700 hover:text-[#0075bb] hover:bg-gray-50 transition-colors duration-200 text-sm font-medium'
+                              onClick={() => setActiveDropdown(null)}
+                            >
+                              {dropdownItem.name}
+                            </Link>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                ) : (
+                  <a
+                    href={item.href}
+                    onClick={item.onClick}
+                    className='text-gray-700 hover:text-[#0075bb] font-medium transition-colors duration-300 cursor-pointer text-sm lg:text-base whitespace-nowrap'
+                  >
+                    {item.name}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
