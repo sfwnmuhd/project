@@ -140,6 +140,14 @@ const Navbar = () => {
                       )}
                     </AnimatePresence>
                   </div>
+                ) : item.href.startsWith('/') ? (
+                  <Link
+                    to={item.href}
+                    onClick={item.onClick}
+                    className='text-gray-700 hover:text-[#0075bb] font-medium transition-colors duration-300 cursor-pointer text-sm lg:text-base whitespace-nowrap'
+                  >
+                    {item.name}
+                  </Link>
                 ) : (
                   <a
                     href={item.href}
