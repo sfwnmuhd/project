@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion'
 import { 
    
@@ -51,13 +52,13 @@ const Footer = () => {
   ]
 
   return (
-    <footer className='bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 text-white relative'>
+    <footer className='bg-gray-900 text-white relative'>
       {/* Back to top button */}
       <motion.button
         onClick={scrollToTop}
-        whileHover={{ scale: 1.1, y: -2 }}
+        whileHover={{ scale: 1.1, backgroundColor: "#0075bb" }}
         whileTap={{ scale: 0.9 }}
-        className='absolute -top-6 right-8 bg-gradient-to-r from-blue-600 to-purple-600 p-4 rounded-2xl shadow-2xl hover:shadow-blue-500/25 backdrop-blur-sm transition-all duration-300 border border-white/20'
+        className='absolute -top-6 right-8 bg-[#005a94] p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300'
       >
         <ArrowUp className='w-6 h-6' />
       </motion.button>
@@ -68,24 +69,24 @@ const Footer = () => {
           <div className='lg:col-span-2'>
             <div className='flex items-center space-x-3 mb-6'>
               
-              <span className='text-3xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>Skynet Solution</span>
+              <span className='text-2xl font-bold'>Skynet Solution</span>
             </div>
-            <p className='text-gray-300 mb-8 leading-relaxed text-lg'>
+            <p className='text-gray-300 mb-6 leading-relaxed'>
               Leading provider of atAcc ERP solutions and expert web development services in Qatar. Transforming businesses with smart software for over 12 years.
             </p>
             
-            <div className='space-y-4'>
-              <div className='flex items-center space-x-4 p-3 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10'>
-                <Phone className='w-6 h-6 text-blue-400' />
-                <span className='text-gray-200 font-medium text-lg'>+974 4431 1525</span>
+            <div className='space-y-3'>
+              <div className='flex items-center space-x-3'>
+                <Phone className='w-5 h-5 text-[#0075bb]' />
+                <span className='text-gray-300'>+974 4431 1525</span>
               </div>
-              <div className='flex items-center space-x-4 p-3 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10'>
-                <Mail className='w-6 h-6 text-blue-400' />
-                <span className='text-gray-200 font-medium text-lg'>info@skynetqatar.com</span>
+              <div className='flex items-center space-x-3'>
+                <Mail className='w-5 h-5 text-[#0075bb]' />
+                <span className='text-gray-300'>info@skynetqatar.com</span>
               </div>
-              <div className='flex items-center space-x-4 p-3 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10'>
-                <MapPin className='w-6 h-6 text-blue-400' />
-                <span className='text-gray-200 font-medium text-lg'>Doha, Qatar</span>
+              <div className='flex items-center space-x-3'>
+                <MapPin className='w-5 h-5 text-[#0075bb]' />
+                <span className='text-gray-300'>Doha, Qatar</span>
               </div>
             </div>
           </div>

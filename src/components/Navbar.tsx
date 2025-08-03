@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion'
 import { Menu, X, Phone, MessageCircle } from 'lucide-react'
 import logo from '../assets/logo1.png'
@@ -59,9 +60,9 @@ const Navbar = () => {
       initial={{ y: 0 }}
       animate={{ y: showNavbar ? 0 : -100 }}
       transition={{ duration: 0.3, ease: 'easeInOut' }}
-      className='fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-lg border-b border-white/20 shadow-lg'
+      className='fixed top-0 left-0 w-full z-50 bg-[#edf4fd] '
     >
-      <div className='container mx-auto flex justify-between items-center py-5 px-6'>
+      <div className='container mx-auto flex justify-between items-center py-4 px-6'>
         <div 
           className='flex items-center space-x-2 cursor-pointer'
           onClick={scrollToTop}
@@ -82,7 +83,7 @@ const Navbar = () => {
                 <a 
                   href={item.href}
                   onClick={item.onClick}
-                  className='text-gray-800 hover:text-blue-600 font-semibold transition-all duration-300 cursor-pointer hover:scale-105'
+                  className='text-gray-700 hover:text-[#0075bb] font-medium transition-colors duration-300 cursor-pointer'
                 >
                   {item.name}
                 </a>
@@ -97,18 +98,18 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="tel:+97444445555"
-              className='flex items-center space-x-2 px-4 py-2 text-gray-800 hover:text-blue-600 transition-all duration-300 hover:scale-105'
+              className='flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-[#0075bb] transition-colors duration-300'
             >
               <Phone className='w-4 h-4' />
               <span className='font-medium'>+974 4431 1525</span>
             </motion.a>
             <motion.a
-              whileHover={{ scale: 1.05, y: -2 }}
+              whileHover={{ scale: 1.05, backgroundColor: "#075E54" }}
               whileTap={{ scale: 0.95 }}
               href="https://wa.me/9747651525"
               target="_blank"
               rel="noopener noreferrer"
-              className='flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold rounded-2xl shadow-xl hover:shadow-green-500/25 backdrop-blur-sm transition-all duration-300 border border-white/20'
+              className='flex items-center space-x-2 px-6 py-3 bg-[#25D366] text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300'
             >
               <MessageCircle className='w-4 h-4' />
               <span>WhatsApp</span>
@@ -123,7 +124,7 @@ const Navbar = () => {
         
         {/* Mobile menu */}
         {showMobileMenu && (
-          <div className='md:hidden fixed inset-0 bg-white/95 backdrop-blur-xl z-50 transition-all duration-300 h-1/2'>
+          <div className='md:hidden fixed inset-0 bg-[#edf4fd] z-50 transition-all duration-300 h-1/2'>
             <div className='flex justify-between items-center p-6 border-b border-gray-200'>
               <div className='flex items-center space-x-2'>
                 <img src={logo} alt="" />
@@ -134,7 +135,7 @@ const Navbar = () => {
               />
             </div>
             
-            <div className='flex flex-col h-full bg-transparent'>
+            <div className='flex flex-col h-full bg-[#edf4fd]'>
               <ul className='flex flex-col gap-6 p-6 flex-1'>
                 {navItems.map((item) => (
                   <li key={item.name}>
@@ -147,7 +148,7 @@ const Navbar = () => {
                         }
                         setShowMobileMenu(false);
                       }}
-                      className='text-xl font-bold text-gray-800 hover:text-blue-600 transition-all duration-300 block py-2 hover:scale-105'
+                      className='text-xl font-medium text-gray-700 hover:text-[#0075bb] transition-colors duration-300 block py-2'
                     >
                       {item.name}
                     </a>
