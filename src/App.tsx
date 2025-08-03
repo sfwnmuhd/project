@@ -29,7 +29,6 @@ const App = () => {
               <Industries/>
               <Contact/>
               <Footer/>
-              <FloatingWhatsApp/>
             </>
           } />
           <Route path="/services/erp-solutions" element={<ERPSolutions />} />
@@ -39,6 +38,7 @@ const App = () => {
           <Route path="/services/it-support-solutions" element={<ItSupportSolution />} />
           <Route path="/services/it-consulting" element={<ITConsulting />} />
         </Routes>
+        <FloatingWhatsApp/>
       </div>
     </Router>
   )
