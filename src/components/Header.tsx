@@ -1,4 +1,3 @@
-
 import Navbar from './Navbar'
 import { motion } from 'framer-motion'
 import Asset from './Asset'
@@ -9,7 +8,7 @@ const Header = () => {
     <section id="home" className='min-h-screen w-full bg-gradient-to-br from-[#f5f7fb] to-[#e8f2ff] relative overflow-hidden flex flex-col pt-20'>
       <Navbar/>
       
-      <div className='container text-center mx-auto w-full flex flex-col justify-center items-center flex-1 px-6 pt-8'>
+      <div className='container text-center mx-auto w-full flex flex-col justify-center items-center flex-1 px-4 sm:px-6 pt-8 max-w-full'>
         <motion.h1 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
