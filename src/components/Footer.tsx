@@ -55,9 +55,9 @@ const Footer = () => {
       {/* Back to top button */}
       <motion.button
         onClick={scrollToTop}
-        whileHover={{ scale: 1.1, backgroundColor: "#0075bb" }}
+        whileHover={{ scale: 1.1, y: -2 }}
         whileTap={{ scale: 0.9 }}
-        className='absolute -top-6 right-8 bg-[#005a94] p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300'
+        className='absolute -top-6 right-8 bg-gradient-to-r from-blue-600 to-purple-600 p-4 rounded-2xl shadow-2xl hover:shadow-blue-500/25 backdrop-blur-sm transition-all duration-300 border border-white/20'
       >
         <ArrowUp className='w-6 h-6' />
       </motion.button>
