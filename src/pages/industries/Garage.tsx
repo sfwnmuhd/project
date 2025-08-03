@@ -49,11 +49,11 @@ const Garage = () => {
               <CarFront className='w-10 h-10 text-white' />
             </div>
             <h1 className='text-4xl md:text-5xl font-bold text-gray-800 mb-6'>
-              Garage Management Solutions
+              atAcc ERP for Garage Management in Qatar
             </h1>
             <p className='text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed'>
-              Streamline your automotive service center with our comprehensive garage management system. 
-              From job cards to inventory control, manage everything efficiently.
+              Transform your automotive service center with atAcc ERP - the best ERP software in Qatar for garage management.
+              Streamline job cards, inventory control, and customer service with our comprehensive atAcc ERP implementation.
             </p>
           </motion.div>
         </div>
