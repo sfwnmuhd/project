@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 // import Clients from './components/Clients'
@@ -18,7 +17,7 @@ import ItSupportSolution from './pages/ItSupportSolution'
 const App = () => {
   return (
     <Router>
-      <div className='w-full min-h-screen'>
+      <div className='w-full min-h-screen overflow-x-hidden'>
         <Routes>
           <Route path="/" element={
             <>
