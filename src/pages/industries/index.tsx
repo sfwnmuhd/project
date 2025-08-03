@@ -102,8 +102,8 @@ export const Grocery = () => IndustryTemplate({
 
 export const Retail = () => IndustryTemplate({
   icon: <ShoppingBag className='w-10 h-10 text-white' />,
-  title: 'Retail Management Solutions',
-  description: 'Comprehensive retail management system for stores of all sizes. Manage inventory, sales, customers, and suppliers with our integrated solution.',
+  title: 'atAcc ERP for Retail Business in Qatar',
+  description: 'Revolutionize your retail operations with atAcc ERP Qatar - the best ERP software for retail management. Comprehensive retail ERP system for inventory, sales, CRM, and supplier management across all store locations in Qatar.',
   features: [
     {
       icon: <ShoppingBag className="w-8 h-8" />,
