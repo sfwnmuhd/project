@@ -13,6 +13,8 @@ import MobileApps from './pages/MobileApps'
 import EcommerceSolutions from './pages/EcommerceSolutions'
 import ITConsulting from './pages/ITConsulting'
 import ItSupportSolution from './pages/ItSupportSolution'
+import ContactPage from './pages/ContactPage'
+import BookDemo from './pages/BookDemo'
 
 // Industry pages
 import {
