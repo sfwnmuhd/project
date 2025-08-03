@@ -8,18 +8,18 @@ const Garage = () => {
   const features = [
     {
       icon: <Wrench className="w-8 h-8" />,
-      title: "Workshop Management",
-      description: "Complete job card tracking, service history, and repair management system"
+      title: "atAcc ERP Workshop Management",
+      description: "Complete job card tracking, service history, and repair management with atAcc ERP's automotive module"
     },
     {
       icon: <Calendar className="w-8 h-8" />,
-      title: "Appointment Scheduling",
-      description: "Automated appointment booking and service reminder notifications"
+      title: "Integrated Appointment System",
+      description: "atAcc ERP's automated appointment booking and service reminder notifications for Qatar garages"
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Customer Management",
-      description: "Comprehensive customer database with vehicle history and preferences"
+      title: "CRM Integration",
+      description: "atAcc ERP's comprehensive customer database with vehicle history and service preferences"
     }
   ]
 
