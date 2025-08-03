@@ -17,7 +17,7 @@ const Mockup = () => {
               <div className='w-3 h-3 bg-yellow-500 rounded-full'></div>
               <div className='w-3 h-3 bg-green-500 rounded-full'></div>
             </div>
-            <div className='p-8'>
+            <div className='p-4 sm:p-6 md:p-8'>
               <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
                 <div className='bg-gradient-to-br from-[#0075bb] to-[#005a94] rounded-lg p-6 text-white'>
                   <h3 className='text-xl font-bold mb-2'>ERP Solutions</h3>
