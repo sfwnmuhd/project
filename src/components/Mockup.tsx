@@ -7,7 +7,7 @@ const Mockup = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 1 }}
-      className='container mx-auto flex justify-center items-center mt-8 mb-8 px-6'
+      className='container mx-auto flex justify-center items-center mt-8 mb-8 px-4 sm:px-6 w-full max-w-full overflow-hidden'
     >
       <div className='relative'>
         <div className='w-full max-w-4xl mx-auto bg-gradient-to-r from-gray-100 to-gray-200 rounded-2xl shadow-2xl p-8'>
