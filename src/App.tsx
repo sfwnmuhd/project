@@ -29,6 +29,7 @@ const App = () => {
               <Industries/>
               <Contact/>
               <Footer/>
+              <FloatingWhatsApp/>
             </>
           } />
           <Route path="/services/erp-solutions" element={<ERPSolutions />} />
