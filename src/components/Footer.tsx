@@ -70,7 +70,7 @@ const Footer = () => {
               
               <span className='text-3xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>Skynet Solution</span>
             </div>
-            <p className='text-gray-300 mb-6 leading-relaxed'>
+            <p className='text-gray-300 mb-8 leading-relaxed text-lg'>
               Leading provider of atAcc ERP solutions and expert web development services in Qatar. Transforming businesses with smart software for over 12 years.
             </p>
             
