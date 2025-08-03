@@ -15,6 +15,7 @@ import ITConsulting from './pages/ITConsulting'
 import ItSupportSolution from './pages/ItSupportSolution'
 import ContactPage from './pages/ContactPage'
 import BookDemo from './pages/BookDemo'
+import AboutPage from './pages/AboutPage'
 
 // Industry pages
 import {
