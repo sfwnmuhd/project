@@ -3,16 +3,20 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { MessageCircle, X } from 'lucide-react'
 
 const FloatingWhatsApp = () => {
-  const [isExpanded, setIsExpanded] = useState(false)
+  const [showChatView, setShowChatView] = useState(false)
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/9747651525', '_blank')
+    if (showChatView) {
+      window.open('https://wa.me/9747651525', '_blank')
+    } else {
+      setShowChatView(true)
+    }
   }
 
   return (
     <div className='fixed bottom-6 right-6 z-50'>
       <AnimatePresence>
-        {isExpanded && (
+        {showChatView && (
           <motion.div
             initial={{ opacity: 0, scale: 0.8, x: 20 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
@@ -22,12 +26,12 @@ const FloatingWhatsApp = () => {
           >
             <div className='bg-white rounded-2xl shadow-2xl p-4 max-w-xs border border-gray-100 relative'>
               <button
-                onClick={() => setIsExpanded(false)}
+                onClick={() => setShowChatView(false)}
                 className='absolute top-2 right-2 text-gray-400 hover:text-gray-600 transition-colors'
               >
                 <X className='w-4 h-4' />
               </button>
-              
+
               <div className='flex items-center space-x-3 mb-3'>
                 <div className='w-10 h-10 bg-[#25D366] rounded-full flex items-center justify-center'>
                   <MessageCircle className='w-5 h-5 text-white' />
@@ -37,11 +41,11 @@ const FloatingWhatsApp = () => {
                   <p className='text-xs text-gray-500'>We're here to assist you</p>
                 </div>
               </div>
-              
+
               <p className='text-sm text-gray-600 mb-4'>
                 Chat with us for instant support and get your questions answered quickly.
               </p>
-              
+
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -56,11 +60,22 @@ const FloatingWhatsApp = () => {
         )}
       </AnimatePresence>
 
-      <motion.div
-        className='relative'
-        onHoverStart={() => setIsExpanded(true)}
-        onHoverEnd={() => setIsExpanded(false)}
-      >
+      <div className='flex items-center'>
+        {/* Always visible "Need help? Chat with us" text */}
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          className='mr-4 bg-white rounded-lg shadow-xl px-4 py-2 whitespace-nowrap border border-gray-100 relative'
+        >
+          <div className='text-sm font-medium text-gray-800'>Need help?</div>
+          <div className='text-xs text-gray-500'>Chat with us</div>
+
+          {/* Arrow pointing to the button */}
+          <div className='absolute right-0 top-1/2 transform translate-x-1 -translate-y-1/2 w-0 h-0 border-l-4 border-l-white border-t-4 border-t-transparent border-b-4 border-b-transparent'></div>
+        </motion.div>
+
+        {/* WhatsApp button */}
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
@@ -68,30 +83,11 @@ const FloatingWhatsApp = () => {
           className='w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center cursor-pointer shadow-2xl hover:shadow-green-500/25 transition-all duration-300 relative'
         >
           <MessageCircle className='w-7 h-7 text-white' />
-          
+
           {/* Pulse animation */}
           <div className='absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-75'></div>
         </motion.div>
-
-        {/* "Need help? Chat with us" text that appears on hover */}
-        <AnimatePresence>
-          {isExpanded && (
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 20 }}
-              transition={{ duration: 0.2 }}
-              className='absolute right-16 top-1/2 transform -translate-y-1/2 bg-white rounded-lg shadow-xl px-4 py-2 whitespace-nowrap border border-gray-100'
-            >
-              <div className='text-sm font-medium text-gray-800'>Need help?</div>
-              <div className='text-xs text-gray-500'>Chat with us</div>
-              
-              {/* Arrow pointing to the button */}
-              <div className='absolute right-0 top-1/2 transform translate-x-1 -translate-y-1/2 w-0 h-0 border-l-4 border-l-white border-t-4 border-t-transparent border-b-4 border-b-transparent'></div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </motion.div>
+      </div>
     </div>
   )
 }
