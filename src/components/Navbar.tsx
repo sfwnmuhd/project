@@ -208,19 +208,35 @@ const Navbar = () => {
               <ul className='flex flex-col gap-6 p-6 flex-1'>
                 {navItems.map((item) => (
                   <li key={item.name}>
-                    <a 
-                      href={item.href}
-                      onClick={(e) => {
-                        if (item.onClick) {
-                          e.preventDefault();
-                          item.onClick();
-                        }
-                        setShowMobileMenu(false);
-                      }}
-                      className='text-xl font-medium text-gray-700 hover:text-[#0075bb] transition-colors duration-300 block py-2'
-                    >
-                      {item.name}
-                    </a>
+                    {item.href.startsWith('/') ? (
+                      <Link
+                        to={item.href}
+                        onClick={(e) => {
+                          if (item.onClick) {
+                            e.preventDefault();
+                            item.onClick();
+                          }
+                          setShowMobileMenu(false);
+                        }}
+                        className='text-xl font-medium text-gray-700 hover:text-[#0075bb] transition-colors duration-300 block py-2'
+                      >
+                        {item.name}
+                      </Link>
+                    ) : (
+                      <a
+                        href={item.href}
+                        onClick={(e) => {
+                          if (item.onClick) {
+                            e.preventDefault();
+                            item.onClick();
+                          }
+                          setShowMobileMenu(false);
+                        }}
+                        className='text-xl font-medium text-gray-700 hover:text-[#0075bb] transition-colors duration-300 block py-2'
+                      >
+                        {item.name}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
