@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion'
 
 const Asset = () => {
@@ -14,7 +13,7 @@ const Asset = () => {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.6 }}
-      className='container mx-auto w-full flex flex-wrap justify-center items-center mt-20 gap-8 md:gap-16'
+      className='container mx-auto w-full flex flex-wrap justify-center items-center mt-20 gap-4 sm:gap-6 md:gap-8 lg:gap-16 px-4'
     >
       {stats.map((stat, index) => (
         <motion.div
