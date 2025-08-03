@@ -11,9 +11,24 @@ import ERPSolutions from './pages/ERPSolutions'
 import WebDevelopment from './pages/WebDevelopment'
 import MobileApps from './pages/MobileApps'
 import EcommerceSolutions from './pages/EcommerceSolutions'
-
 import ITConsulting from './pages/ITConsulting'
 import ItSupportSolution from './pages/ItSupportSolution'
+
+// Industry pages
+import {
+  Garage,
+  Gym,
+  Laundry,
+  Tailoring,
+  Manufacturing,
+  Grocery,
+  Retail,
+  Wholesale,
+  Restaurant,
+  Hypermarket,
+  SMEs,
+  Cafes
+} from './pages/industries'
 
 const App = () => {
   return (
