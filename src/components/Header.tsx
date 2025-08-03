@@ -2,6 +2,7 @@ import Navbar from './Navbar'
 import { motion } from 'framer-motion'
 import Asset from './Asset'
 import Mockup from './Mockup'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
