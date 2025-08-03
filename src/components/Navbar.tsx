@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion'
 import { Menu, X, Phone, MessageCircle } from 'lucide-react'
 import logo from '../assets/logo1.png'
@@ -62,7 +61,7 @@ const Navbar = () => {
       transition={{ duration: 0.3, ease: 'easeInOut' }}
       className='fixed top-0 left-0 w-full z-50 bg-[#edf4fd] '
     >
-      <div className='container mx-auto flex justify-between items-center py-4 px-6'>
+      <div className='container mx-auto flex justify-between items-center py-4 px-4 sm:px-6 lg:px-6'>
         <div 
           className='flex items-center space-x-2 cursor-pointer'
           onClick={scrollToTop}
@@ -70,20 +69,20 @@ const Navbar = () => {
           {/* <Zap className='w-8 h-8 text-[#0075bb]' /> */}
           {/* <span className='text-2xl font-bold text-gray-800'>Skynet Solution</span>/ */}
           <Link to="/">
-            <img src={logo} alt=""  />
+            <img src={logo} alt="Skynet Solution" className='h-8 sm:h-10 md:h-12 w-auto' />
           </Link>
           
 
         </div>
         
         <div>
-          <ul className='hidden md:flex gap-8 items-center'>
+          <ul className='hidden md:flex gap-4 lg:gap-6 xl:gap-8 items-center'>
             {navItems.map((item) => (
               <li key={item.name}>
                 <a 
                   href={item.href}
                   onClick={item.onClick}
-                  className='text-gray-700 hover:text-[#0075bb] font-medium transition-colors duration-300 cursor-pointer'
+                  className='text-gray-700 hover:text-[#0075bb] font-medium transition-colors duration-300 cursor-pointer text-sm lg:text-base whitespace-nowrap'
                 >
                   {item.name}
                 </a>
@@ -93,15 +92,16 @@ const Navbar = () => {
         </div>
         
         <div>
-          <div className='hidden md:flex items-center space-x-4'>
+          <div className='hidden md:flex items-center space-x-2 lg:space-x-4'>
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="tel:+97444445555"
-              className='flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-[#0075bb] transition-colors duration-300'
+              className='flex items-center space-x-1 lg:space-x-2 px-2 lg:px-4 py-2 text-gray-700 hover:text-[#0075bb] transition-colors duration-300'
             >
               <Phone className='w-4 h-4' />
-              <span className='font-medium'>+974 4431 1525</span>
+              <span className='font-medium text-sm lg:text-base hidden lg:inline'>+974 4431 1525</span>
+              <span className='font-medium text-sm lg:hidden'>Call</span>
             </motion.a>
             <motion.a
               whileHover={{ scale: 1.05, backgroundColor: "#075E54" }}
@@ -109,10 +109,10 @@ const Navbar = () => {
               href="https://wa.me/9747651525"
               target="_blank"
               rel="noopener noreferrer"
-              className='flex items-center space-x-2 px-6 py-3 bg-[#25D366] text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300'
+              className='flex items-center space-x-1 lg:space-x-2 px-3 lg:px-6 py-2 lg:py-3 bg-[#25D366] text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300'
             >
               <MessageCircle className='w-4 h-4' />
-              <span>WhatsApp</span>
+              <span className='text-sm lg:text-base'>WhatsApp</span>
             </motion.a>
           </div>
           
@@ -127,7 +127,7 @@ const Navbar = () => {
           <div className='md:hidden fixed inset-0 bg-[#edf4fd] z-50 transition-all duration-300 h-1/2'>
             <div className='flex justify-between items-center p-6 border-b border-gray-200'>
               <div className='flex items-center space-x-2'>
-                <img src={logo} alt="" />
+                <img src={logo} alt="Skynet Solution" className='h-8 w-auto' />
               </div>
               <X 
                 onClick={() => setShowMobileMenu(false)} 
