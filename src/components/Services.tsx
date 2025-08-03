@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { 
@@ -52,7 +51,7 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className='min-h-screen py-20 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center'>
+    <section id="services" className='min-h-screen py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 flex items-center'>
       <div className='container mx-auto px-6'>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -61,8 +60,8 @@ const Services = () => {
           viewport={{ once: true }}
           className='text-center mb-16'
         >
-          <h2 className='text-5xl font-bold text-gray-800 mb-6'>Our Services</h2>
-          <p className='text-xl text-gray-600 max-w-3xl mx-auto'>
+          <h2 className='text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 mb-8'>Our Services</h2>
+          <p className='text-2xl font-medium text-gray-700 max-w-4xl mx-auto leading-relaxed'>
             We offer comprehensive technology solutions designed to streamline your business operations and drive growth.
           </p>
         </motion.div>
@@ -75,20 +74,20 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              whileHover={{ y: -10, scale: 1.02 }}
-              className='bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 group'
+              whileHover={{ y: -12, scale: 1.03 }}
+              className='bg-white/70 backdrop-blur-md rounded-3xl p-10 shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 group border border-white/50 hover:border-blue-200/50'
             >
-              <div className='text-[#0075bb] mb-6 group-hover:scale-110 transition-transform duration-300'>
+              <div className='text-blue-600 mb-8 group-hover:scale-125 transition-transform duration-500 p-3 bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl w-fit'>
                 {service.icon}
               </div>
               
-              <h3 className='text-2xl font-bold text-gray-800 mb-4'>{service.title}</h3>
-              <p className='text-gray-600 mb-6 leading-relaxed'>{service.description}</p>
+              <h3 className='text-3xl font-bold text-gray-900 mb-6 group-hover:text-blue-800 transition-colors duration-300'>{service.title}</h3>
+              <p className='text-gray-700 mb-8 leading-relaxed text-lg'>{service.description}</p>
               
               <ul className='space-y-2 mb-6'>
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className='flex items-center text-sm text-gray-600'>
-                    <div className='w-2 h-2 bg-[#0075bb] rounded-full mr-3'></div>
+                  <li key={featureIndex} className='flex items-center text-base text-gray-700 font-medium'>
+                    <div className='w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mr-4 group-hover:scale-125 transition-transform duration-300'></div>
                     {feature}
                   </li>
                 ))}
@@ -96,10 +95,10 @@ const Services = () => {
               
               <Link to={getServiceLink(service.title)}>
                 <motion.button
-                  whileHover={{ x: 5 }}
-                  className='flex items-center text-[#0075bb] font-semibold group-hover:text-[#005a94] transition-colors duration-300'
+                  whileHover={{ x: 8, scale: 1.05 }}
+                  className='flex items-center text-blue-600 font-bold group-hover:text-purple-600 transition-all duration-300 text-lg'
                 >
-                  Learn More <ArrowRight className='w-4 h-4 ml-2' />
+                  Learn More <ArrowRight className='w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform duration-300' />
                 </motion.button>
               </Link>
             </motion.div>
