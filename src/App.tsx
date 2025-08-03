@@ -52,6 +52,20 @@ const App = () => {
           <Route path="/services/ecommerce-solutions" element={<EcommerceSolutions />} />
           <Route path="/services/it-support-solutions" element={<ItSupportSolution />} />
           <Route path="/services/it-consulting" element={<ITConsulting />} />
+
+          {/* Industry Routes */}
+          <Route path="/industries/garage" element={<Garage />} />
+          <Route path="/industries/gym" element={<Gym />} />
+          <Route path="/industries/laundry" element={<Laundry />} />
+          <Route path="/industries/tailoring" element={<Tailoring />} />
+          <Route path="/industries/manufacturing" element={<Manufacturing />} />
+          <Route path="/industries/grocery" element={<Grocery />} />
+          <Route path="/industries/retail" element={<Retail />} />
+          <Route path="/industries/wholesale" element={<Wholesale />} />
+          <Route path="/industries/restaurant" element={<Restaurant />} />
+          <Route path="/industries/hypermarket" element={<Hypermarket />} />
+          <Route path="/industries/smes" element={<SMEs />} />
+          <Route path="/industries/cafes" element={<Cafes />} />
         </Routes>
         <FloatingWhatsApp/>
       </div>
