@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion'
-import { Menu, X, Phone, MessageCircle } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Menu, X, Phone, ChevronDown } from 'lucide-react'
 import logo from '../assets/logo1.png'
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
