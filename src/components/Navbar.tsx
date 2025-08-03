@@ -46,12 +46,35 @@ const Navbar = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
+  const serviceItems = [
+    { name: 'ERP Solutions', href: '/services/erp-solutions' },
+    { name: 'Web Development', href: '/services/web-development' },
+    { name: 'Mobile Applications', href: '/services/mobile-apps' },
+    { name: 'E-commerce Solutions', href: '/services/ecommerce-solutions' },
+    { name: 'IT Support Solutions', href: '/services/it-support-solutions' },
+    { name: 'IT Consulting', href: '/services/it-consulting' },
+  ]
+
+  const industryItems = [
+    { name: 'Garage', href: '/industries/garage' },
+    { name: 'Gym', href: '/industries/gym' },
+    { name: 'Laundry', href: '/industries/laundry' },
+    { name: 'Tailoring', href: '/industries/tailoring' },
+    { name: 'Manufacturing', href: '/industries/manufacturing' },
+    { name: 'Grocery', href: '/industries/grocery' },
+    { name: 'Retail', href: '/industries/retail' },
+    { name: 'Wholesale', href: '/industries/wholesale' },
+    { name: 'Restaurant', href: '/industries/restaurant' },
+    { name: 'Hypermarket', href: '/industries/hypermarket' },
+    { name: 'SMEs', href: '/industries/smes' },
+    { name: 'Cafes', href: '/industries/cafes' },
+  ]
+
   const navItems = [
     { name: 'Home', href: '/', onClick: scrollToTop },
     { name: 'About', href: '#about' },
-    // { name: 'Clients', href: '#clients' },
-    { name: 'Services', href: '#services' },
-    { name: 'Industries', href: '#industries' },
+    { name: 'Services', href: '#services', hasDropdown: true, dropdownItems: serviceItems },
+    { name: 'Industries', href: '#industries', hasDropdown: true, dropdownItems: industryItems },
     { name: 'Contact', href: '#contact' },
   ]
 
