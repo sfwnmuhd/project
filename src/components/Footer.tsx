@@ -68,7 +68,7 @@ const Footer = () => {
           <div className='lg:col-span-2'>
             <div className='flex items-center space-x-3 mb-6'>
               
-              <span className='text-2xl font-bold'>Skynet Solution</span>
+              <span className='text-3xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>Skynet Solution</span>
             </div>
             <p className='text-gray-300 mb-6 leading-relaxed'>
               Leading provider of atAcc ERP solutions and expert web development services in Qatar. Transforming businesses with smart software for over 12 years.
