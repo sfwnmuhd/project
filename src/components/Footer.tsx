@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion'
 import { 
    
@@ -35,12 +34,12 @@ const Footer = () => {
       { name: 'Testimonials', href: '#contact' }
     ],
     support: [
-      { name: 'Contact Us', href: '#contact' },
-      { name: 'Technical Support', href: '#contact' },
-      { name: 'Documentation', href: '#contact' },
-      { name: 'Training', href: '#contact' },
-      { name: 'FAQ', href: '#contact' },
-      { name: 'System Status', href: '#contact' }
+      { name: 'Contact Us', href: '/contact' },
+      { name: 'Technical Support', href: '/contact' },
+      { name: 'Documentation', href: '/contact' },
+      { name: 'Training', href: '/contact' },
+      { name: 'FAQ', href: '/contact' },
+      { name: 'System Status', href: '/contact' }
     ]
   }
 
