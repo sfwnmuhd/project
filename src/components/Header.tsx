@@ -34,15 +34,16 @@ const Header = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className='flex flex-col sm:flex-row gap-4 sm:gap-6 mt-12 px-4 sm:px-0'
         >
-          <motion.a
-            whileHover={{ scale: 1.05, backgroundColor: "#005a94" }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            href="#contact" 
-            className='px-8 sm:px-10 py-4 rounded-xl bg-[#0075bb] text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 text-center'
-          >
-            Book a Demo
-          </motion.a>
+          <Link to="/book-demo">
+            <motion.div
+              whileHover={{ scale: 1.05, backgroundColor: "#005a94" }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className='px-8 sm:px-10 py-4 rounded-xl bg-[#0075bb] text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 text-center inline-block'
+            >
+              Book a Demo
+            </motion.div>
+          </Link>
           
           <motion.a
             whileHover={{
