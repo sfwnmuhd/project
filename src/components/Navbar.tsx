@@ -104,15 +104,12 @@ const Navbar = () => {
               <span className='font-medium text-sm lg:hidden'>Call</span>
             </motion.a>
             <motion.a
-              whileHover={{ scale: 1.05, backgroundColor: "#075E54" }}
+              whileHover={{ scale: 1.05, backgroundColor: "#005a94" }}
               whileTap={{ scale: 0.95 }}
-              href="https://wa.me/9747651525"
-              target="_blank"
-              rel="noopener noreferrer"
-              className='flex items-center space-x-1 lg:space-x-2 px-3 lg:px-6 py-2 lg:py-3 bg-[#25D366] text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300'
+              href="#contact"
+              className='flex items-center space-x-1 lg:space-x-2 px-3 lg:px-6 py-2 lg:py-3 bg-[#0075bb] text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300'
             >
-              <MessageCircle className='w-4 h-4' />
-              <span className='text-sm lg:text-base'>WhatsApp</span>
+              <span className='text-sm lg:text-base'>Book Free Demo</span>
             </motion.a>
           </div>
           
