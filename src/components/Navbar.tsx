@@ -72,7 +72,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', href: '/', onClick: scrollToTop },
-    { name: 'About', href: '/#about' },
+    { name: 'About', href: '/about' },
     { name: 'Services', href: '/#services', hasDropdown: true, dropdownItems: serviceItems },
     { name: 'Industries', href: '/#industries', hasDropdown: true, dropdownItems: industryItems },
     { name: 'Contact', href: '/contact' },
