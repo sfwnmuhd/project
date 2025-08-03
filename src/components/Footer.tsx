@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion'
 import { 
    
@@ -52,7 +51,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className='bg-gray-900 text-white relative'>
+    <footer className='bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 text-white relative'>
       {/* Back to top button */}
       <motion.button
         onClick={scrollToTop}
