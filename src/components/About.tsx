@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion'
 import { CheckCircle, Users, Award, Globe } from 'lucide-react'
 
@@ -29,7 +28,7 @@ const About = () => {
   ]
 
   return (
-    <section id="about" className='min-h-screen py-20 bg-white flex items-center'>
+    <section id="about" className='min-h-screen py-20 bg-gradient-to-br from-white via-gray-50 to-blue-50 flex items-center'>
       <div className='container mx-auto px-6'>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -38,9 +37,9 @@ const About = () => {
           viewport={{ once: true }}
           className='text-center mb-16'
         >
-          <h2 className='text-5xl font-bold text-gray-800 mb-6'>About Skynet Solution</h2>
-          <p className='text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed'>
-            With over 12 years of experience, we are Qatar's leading provider of innovative ERP solutions 
+          <h2 className='text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 mb-8'>About Skynet Solution</h2>
+          <p className='text-2xl font-medium text-gray-700 max-w-4xl mx-auto leading-relaxed'>
+            With over 12 years of experience, we are Qatar's leading provider of innovative ERP solutions
             and professional web development services, helping businesses transform and grow.
           </p>
         </motion.div>
@@ -52,9 +51,9 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className='text-3xl font-bold text-gray-800 mb-6'>Our Mission</h3>
-            <p className='text-lg text-gray-600 mb-6 leading-relaxed'>
-              To empower businesses with intelligent software solutions that streamline operations, 
+            <h3 className='text-4xl font-bold text-gray-900 mb-8'>Our Mission</h3>
+            <p className='text-xl font-medium text-gray-700 mb-8 leading-relaxed'>
+              To empower businesses with intelligent software solutions that streamline operations,
               enhance productivity, and drive sustainable growth in the digital age.
             </p>
             <div className='space-y-4'>
@@ -67,8 +66,8 @@ const About = () => {
                   viewport={{ once: true }}
                   className='flex items-center space-x-3'
                 >
-                  <CheckCircle className='w-6 h-6 text-green-500' />
-                  <span className='text-gray-700 font-medium'>{achievement}</span>
+                  <CheckCircle className='w-7 h-7 text-green-600' />
+                  <span className='text-gray-800 font-semibold text-lg'>{achievement}</span>
                 </motion.div>
               ))}
             </div>
@@ -79,9 +78,9 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className='bg-gradient-to-br from-[#f5f7fb] to-[#e8f2ff] rounded-2xl p-8'
+            className='bg-white/70 backdrop-blur-md rounded-3xl p-10 shadow-2xl border border-white/50'
           >
-            <h3 className='text-3xl font-bold text-gray-800 mb-8'>Why Choose Us</h3>
+            <h3 className='text-4xl font-bold text-gray-900 mb-10'>Why Choose Us</h3>
             <div className='space-y-6'>
               {features.map((feature, index) => (
                 <motion.div
@@ -92,10 +91,10 @@ const About = () => {
                   viewport={{ once: true }}
                   className='flex items-start space-x-4'
                 >
-                  <div className='text-[#0075bb] mt-1'>{feature.icon}</div>
+                  <div className='text-blue-600 mt-1 p-3 bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl w-fit'>{feature.icon}</div>
                   <div>
-                    <h4 className='text-xl font-semibold text-gray-800 mb-2'>{feature.title}</h4>
-                    <p className='text-gray-600'>{feature.description}</p>
+                    <h4 className='text-2xl font-bold text-gray-900 mb-3'>{feature.title}</h4>
+                    <p className='text-gray-700 text-lg leading-relaxed'>{feature.description}</p>
                   </div>
                 </motion.div>
               ))}
