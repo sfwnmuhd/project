@@ -74,18 +74,18 @@ const Footer = () => {
               Leading provider of atAcc ERP solutions and expert web development services in Qatar. Transforming businesses with smart software for over 12 years.
             </p>
             
-            <div className='space-y-3'>
-              <div className='flex items-center space-x-3'>
-                <Phone className='w-5 h-5 text-[#0075bb]' />
-                <span className='text-gray-300'>+974 4431 1525</span>
+            <div className='space-y-4'>
+              <div className='flex items-center space-x-4 p-3 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10'>
+                <Phone className='w-6 h-6 text-blue-400' />
+                <span className='text-gray-200 font-medium text-lg'>+974 4431 1525</span>
               </div>
-              <div className='flex items-center space-x-3'>
-                <Mail className='w-5 h-5 text-[#0075bb]' />
-                <span className='text-gray-300'>info@skynetqatar.com</span>
+              <div className='flex items-center space-x-4 p-3 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10'>
+                <Mail className='w-6 h-6 text-blue-400' />
+                <span className='text-gray-200 font-medium text-lg'>info@skynetqatar.com</span>
               </div>
-              <div className='flex items-center space-x-3'>
-                <MapPin className='w-5 h-5 text-[#0075bb]' />
-                <span className='text-gray-300'>Doha, Qatar</span>
+              <div className='flex items-center space-x-4 p-3 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10'>
+                <MapPin className='w-6 h-6 text-blue-400' />
+                <span className='text-gray-200 font-medium text-lg'>Doha, Qatar</span>
               </div>
             </div>
           </div>
