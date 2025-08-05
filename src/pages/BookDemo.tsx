@@ -93,29 +93,22 @@ const BookDemo = () => {
         </div>
       </section>
 
-      {/* Demo Features */}
+      {/* Demo Image Section */}
       <section className='py-16'>
         <div className='container mx-auto px-6'>
-          <h2 className='text-3xl font-bold text-gray-800 text-center mb-12'>What to Expect</h2>
-          
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mb-16'>
-            {demoFeatures.map((feature, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className='text-center p-6 rounded-xl bg-gray-50'
-              >
-                <div className='text-[#0075bb] mb-4 flex justify-center'>
-                  {feature.icon}
-                </div>
-                <h3 className='text-xl font-bold text-gray-800 mb-3'>{feature.title}</h3>
-                <p className='text-gray-600'>{feature.description}</p>
-              </motion.div>
-            ))}
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className='max-w-4xl mx-auto'
+          >
+            <img
+              src="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg"
+              alt="Professional business meeting for ERP demo"
+              className='w-full h-96 object-cover rounded-2xl shadow-2xl'
+            />
+          </motion.div>
         </div>
       </section>
 
