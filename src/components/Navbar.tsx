@@ -204,7 +204,7 @@ const Navbar = () => {
               />
             </div>
             
-            <div className='flex flex-col h-full bg-[#edf4fd]'>
+            <div className='flex flex-col h-full bg-transparent'>
               <ul className='flex flex-col gap-6 p-6 flex-1'>
                 {navItems.map((item) => (
                   <li key={item.name}>
