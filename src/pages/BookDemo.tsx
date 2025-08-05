@@ -93,24 +93,7 @@ const BookDemo = () => {
         </div>
       </section>
 
-      {/* Demo Image Section */}
-      <section className='py-16'>
-        <div className='container mx-auto px-6'>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className='max-w-4xl mx-auto'
-          >
-            <img
-              src="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg"
-              alt="Professional business meeting for ERP demo"
-              className='w-full h-96 object-cover rounded-2xl shadow-2xl'
-            />
-          </motion.div>
-        </div>
-      </section>
+
 
       {/* Booking Form */}
       <section className='py-16 bg-gradient-to-br from-gray-50 to-gray-100'>
