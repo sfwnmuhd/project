@@ -83,7 +83,7 @@ const Navbar = () => {
       initial={{ y: 0 }}
       animate={{ y: showNavbar ? 0 : -100 }}
       transition={{ duration: 0.3, ease: 'easeInOut' }}
-      className='fixed top-0 left-0 w-full z-50 bg-[#edf4fd] '
+      className='fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-slate-50 via-blue-50 to-indigo-50 backdrop-blur-md border-b border-white/20 shadow-lg'
     >
       <div className='container mx-auto flex justify-between items-center py-4 px-4 sm:px-6 lg:px-6'>
         <div 
