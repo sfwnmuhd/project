@@ -113,28 +113,20 @@ const Garage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className='space-y-8'
+              className='bg-white p-8 rounded-2xl shadow-xl'
             >
-              <img
-                src="https://images.pexels.com/photos/3807386/pexels-photo-3807386.jpeg"
-                alt="Professional garage workshop with mechanic working"
-                className='w-full h-64 object-cover rounded-2xl shadow-xl'
-              />
-
-              <div className='bg-white p-8 rounded-2xl shadow-xl'>
-                <h3 className='text-2xl font-bold text-gray-800 mb-4'>Ready to Get Started?</h3>
-                <p className='text-gray-600 mb-6'>
-                  Transform your garage operations with our comprehensive management solution.
-                  Contact us for a free consultation and demo.
-                </p>
-                <Link
-                  to="/#contact"
-                  className='inline-flex items-center space-x-2 bg-[#0075bb] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#005a94] transition-colors duration-300'
-                >
-                  <span>Get Free Demo</span>
-                  <ArrowRight className='w-4 h-4' />
-                </Link>
-              </div>
+              <h3 className='text-2xl font-bold text-gray-800 mb-4'>Ready to Get Started?</h3>
+              <p className='text-gray-600 mb-6'>
+                Transform your garage operations with our comprehensive management solution.
+                Contact us for a free consultation and demo.
+              </p>
+              <Link
+                to="/#contact"
+                className='inline-flex items-center space-x-2 bg-[#0075bb] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#005a94] transition-colors duration-300'
+              >
+                <span>Get Free Demo</span>
+                <ArrowRight className='w-4 h-4' />
+              </Link>
             </motion.div>
           </div>
         </div>
