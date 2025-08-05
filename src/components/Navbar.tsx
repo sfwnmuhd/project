@@ -175,7 +175,7 @@ const Navbar = () => {
               <span className='font-medium text-sm lg:text-base hidden lg:inline'>+974 4431 1525</span>
               <span className='font-medium text-sm lg:hidden'>Call</span>
             </motion.a>
-            <Link to="/book-demo">
+            <Link to="/contact">
               <motion.div
                 whileHover={{ scale: 1.05, backgroundColor: "#005a94" }}
                 whileTap={{ scale: 0.95 }}
