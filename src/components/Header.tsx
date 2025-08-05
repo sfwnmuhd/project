@@ -90,7 +90,7 @@ const Header = () => {
               className='grid grid-cols-3 gap-8 pt-8 border-t border-gray-200'
             >
               {[
-                { number: '500+', label: 'Happy Clients' },
+                { number: '1000+', label: 'Happy Clients' },
                 { number: '15+', label: 'Industries' },
                 { number: '12+', label: 'Years Experience' }
               ].map((stat, index) => (
