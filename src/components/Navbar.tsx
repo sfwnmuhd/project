@@ -163,7 +163,7 @@ const Navbar = () => {
         </div>
         
         <div>
-          <div className='hidden md:flex items-center space-x-2 lg:space-x-4'>
+          <div className='hidden lg:flex items-center space-x-2 lg:space-x-4'>
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
