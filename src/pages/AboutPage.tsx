@@ -89,25 +89,40 @@ const AboutPage = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className='pt-24 pb-16 bg-gradient-to-br from-[#f5f7fb] to-[#e8f2ff]'>
-        <div className='container mx-auto px-6'>
+      <section className='pt-24 pb-16 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden'>
+        {/* Background Elements */}
+        <div className='absolute inset-0 overflow-hidden'>
+          <div className='absolute -top-40 -right-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse'></div>
+          <div className='absolute -bottom-40 -left-40 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse'></div>
+        </div>
+
+        <div className='container mx-auto px-6 relative z-10'>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className='text-center'
           >
-            <h1 className='text-4xl md:text-6xl font-bold text-gray-800 mb-6'>
-              Best <span className='text-[#0075bb]'>ERP Software</span> in Qatar
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className='inline-flex items-center px-6 py-3 bg-blue-100 text-blue-800 rounded-full text-lg font-medium mb-8'
+            >
+              🏆 Qatar's #1 ERP Implementation Partner
+            </motion.div>
+
+            <h1 className='text-4xl md:text-6xl font-bold text-gray-900 mb-6'>
+              Best <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600'>ERP Software</span> in Qatar
             </h1>
             <p className='text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8'>
-              Skynet Solution is Qatar's premier atAcc ERP implementation partner, delivering comprehensive 
+              Skynet Solution is Qatar's premier atAcc ERP implementation partner, delivering comprehensive
               business management solutions for over 12 years. Transform your business with the best ERP software in Qatar.
             </p>
             <div className='flex flex-wrap justify-center gap-4 text-lg font-semibold text-gray-700'>
-              <span className='bg-white px-4 py-2 rounded-full shadow-md'>atAcc ERP Qatar</span>
-              <span className='bg-white px-4 py-2 rounded-full shadow-md'>Best ERP Software Qatar</span>
-              <span className='bg-white px-4 py-2 rounded-full shadow-md'>ERP Implementation</span>
+              <span className='bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-white/20'>atAcc ERP Qatar</span>
+              <span className='bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-white/20'>Best ERP Software Qatar</span>
+              <span className='bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-white/20'>ERP Implementation</span>
             </div>
           </motion.div>
         </div>
