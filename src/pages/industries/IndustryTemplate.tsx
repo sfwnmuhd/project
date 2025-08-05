@@ -16,6 +16,8 @@ interface IndustryTemplateProps {
   description: string;
   features: Feature[];
   benefits: string[];
+  imageUrl?: string;
+  imageAlt?: string;
 }
 
 const IndustryTemplate = ({ icon, title, description, features, benefits }: IndustryTemplateProps) => {
