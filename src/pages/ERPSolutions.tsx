@@ -102,6 +102,20 @@ const ERPSolutions = () => {
               </motion.a>
             </div>
           </motion.div>
+
+          {/* Hero Image */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="mt-16 max-w-4xl mx-auto"
+          >
+            <img
+              src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg"
+              alt="ERP software dashboard interface"
+              className="w-full h-80 object-cover rounded-2xl shadow-2xl"
+            />
+          </motion.div>
         </div>
       </section>
 
