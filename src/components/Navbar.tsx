@@ -8,6 +8,7 @@ const Navbar = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [activeMobileDropdown, setActiveMobileDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     if (showMobileMenu) {
