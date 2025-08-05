@@ -52,7 +52,13 @@ const Services = () => {
 
   return (
     <section id="services" className='min-h-screen py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 flex items-center relative overflow-hidden'>
-      <div className='container mx-auto px-6'>
+      {/* Background Elements */}
+      <div className='absolute inset-0 overflow-hidden'>
+        <div className='absolute top-20 right-20 w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse'></div>
+        <div className='absolute bottom-20 left-20 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse'></div>
+      </div>
+
+      <div className='container mx-auto px-6 relative z-10'>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
