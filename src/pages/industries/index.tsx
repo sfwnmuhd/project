@@ -11,6 +11,8 @@ export const Tailoring = () => IndustryTemplate({
   icon: <Shirt className='w-10 h-10 text-white' />,
   title: 'Tailoring Management Solutions',
   description: 'Streamline your custom apparel business with our comprehensive tailoring management system. Track orders, manage measurements, and schedule deliveries efficiently.',
+  imageUrl: 'https://images.pexels.com/photos/4620607/pexels-photo-4620607.jpeg',
+  imageAlt: 'Professional tailor measuring client in workshop',
   features: [
     {
       icon: <Shirt className="w-8 h-8" />,
