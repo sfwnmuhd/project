@@ -118,7 +118,7 @@ const Header = () => {
                 className='bg-white rounded-2xl shadow-2xl p-6 relative z-10'
               >
                 <div className='flex items-center justify-between mb-6'>
-                  <h3 className='text-lg font-semibold text-gray-800'>atAcc ERP Dashboard</h3>
+                  <h3 className='text-lg font-semibold text-gray-800'>ERP Dashboard</h3>
                   <div className='flex space-x-2'>
                     <div className='w-3 h-3 bg-red-400 rounded-full'></div>
                     <div className='w-3 h-3 bg-yellow-400 rounded-full'></div>
