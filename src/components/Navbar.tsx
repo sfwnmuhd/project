@@ -100,7 +100,7 @@ const Navbar = () => {
         </div>
         
         <div>
-          <ul className='hidden md:flex gap-4 lg:gap-6 xl:gap-8 items-center'>
+          <ul className='hidden lg:flex gap-4 lg:gap-6 xl:gap-8 items-center'>
             {navItems.map((item) => (
               <li
                 key={item.name}
