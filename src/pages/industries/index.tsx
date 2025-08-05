@@ -77,6 +77,8 @@ export const Grocery = () => IndustryTemplate({
   icon: <ShoppingCart className='w-10 h-10 text-white' />,
   title: 'Grocery Store Management',
   description: 'Streamline your grocery store operations with our comprehensive POS and inventory management system. Handle everything from billing to stock management.',
+  imageUrl: 'https://images.pexels.com/photos/4177725/pexels-photo-4177725.jpeg',
+  imageAlt: 'Customer shopping in modern grocery store',
   features: [
     {
       icon: <ShoppingCart className="w-8 h-8" />,
