@@ -62,7 +62,7 @@ const Header = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className='flex flex-col sm:flex-row gap-4'
             >
-              <Link to="/book-demo">
+              <Link to="/contact">
                 <motion.div
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
