@@ -44,6 +44,8 @@ export const Manufacturing = () => IndustryTemplate({
   icon: <Factory className='w-10 h-10 text-white' />,
   title: 'atAcc ERP for Manufacturing in Qatar',
   description: 'Transform your manufacturing operations with atAcc ERP - the best ERP software in Qatar for production management. Complete end-to-end manufacturing ERP solution with production planning, quality control, and supply chain integration.',
+  imageUrl: 'https://images.pexels.com/photos/1145434/pexels-photo-1145434.jpeg',
+  imageAlt: 'Manufacturing worker operating industrial equipment',
   features: [
     {
       icon: <Factory className="w-8 h-8" />,
