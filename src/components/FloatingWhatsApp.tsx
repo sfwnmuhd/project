@@ -66,7 +66,7 @@ const FloatingWhatsApp = () => {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className='mr-4 bg-white rounded-lg shadow-xl px-4 py-2 whitespace-nowrap border border-gray-100 relative'
+          className='mr-2 sm:mr-4 bg-white rounded-lg shadow-xl px-3 sm:px-4 py-2 whitespace-nowrap border border-gray-100 relative hidden sm:block'
         >
           <div className='text-sm font-medium text-gray-800'>Need help?</div>
           <div className='text-xs text-gray-500'>Chat with us</div>
