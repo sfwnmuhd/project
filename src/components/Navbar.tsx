@@ -206,10 +206,45 @@ const Navbar = () => {
             </div>
 
             <div className='flex flex-col h-full bg-white/95 backdrop-blur-sm'>
-              <ul className='flex flex-col gap-6 p-6 flex-1'>
+              <ul className='flex flex-col gap-4 p-6 flex-1'>
                 {navItems.map((item) => (
                   <li key={item.name}>
-                    {item.href.startsWith('/') ? (
+                    {item.hasDropdown ? (
+                      <div>
+                        <button
+                          onClick={() => setActiveMobileDropdown(activeMobileDropdown === item.name ? null : item.name)}
+                          className='flex items-center justify-between w-full text-xl font-medium text-gray-700 hover:text-[#0075bb] transition-colors duration-300 py-2'
+                        >
+                          <span>{item.name}</span>
+                          <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${activeMobileDropdown === item.name ? 'rotate-180' : ''}`} />
+                        </button>
+                        <AnimatePresence>
+                          {activeMobileDropdown === item.name && (
+                            <motion.div
+                              initial={{ opacity: 0, height: 0 }}
+                              animate={{ opacity: 1, height: 'auto' }}
+                              exit={{ opacity: 0, height: 0 }}
+                              transition={{ duration: 0.3 }}
+                              className='ml-4 mt-2 space-y-2'
+                            >
+                              {item.dropdownItems?.map((dropdownItem) => (
+                                <Link
+                                  key={dropdownItem.name}
+                                  to={dropdownItem.href}
+                                  className='block text-lg text-gray-600 hover:text-[#0075bb] transition-colors duration-200 py-2'
+                                  onClick={() => {
+                                    setShowMobileMenu(false);
+                                    setActiveMobileDropdown(null);
+                                  }}
+                                >
+                                  {dropdownItem.name}
+                                </Link>
+                              ))}
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </div>
+                    ) : item.href.startsWith('/') ? (
                       <Link
                         to={item.href}
                         onClick={(e) => {
