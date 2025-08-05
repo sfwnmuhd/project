@@ -185,9 +185,9 @@ const Navbar = () => {
             </Link>
           </div>
           
-          <Menu 
-            onClick={() => setShowMobileMenu(true)} 
-            className='md:hidden w-7 h-7 cursor-pointer text-gray-700'
+          <Menu
+            onClick={() => setShowMobileMenu(true)}
+            className='lg:hidden w-7 h-7 cursor-pointer text-gray-700'
           />
         </div>
         
