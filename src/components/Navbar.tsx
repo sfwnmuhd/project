@@ -194,17 +194,17 @@ const Navbar = () => {
         {/* Mobile menu */}
         {showMobileMenu && (
           <div className='lg:hidden fixed inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 z-50 transition-all duration-300'>
-            <div className='flex justify-between items-center p-6 border-b border-gray-200'>
+            <div className='flex justify-between items-center p-6 border-b border-gray-200 bg-white/90 backdrop-blur-sm'>
               <div className='flex items-center space-x-2'>
                 <img src={logo} alt="Skynet Solution" className='h-8 w-auto' />
               </div>
-              <X 
-                onClick={() => setShowMobileMenu(false)} 
+              <X
+                onClick={() => setShowMobileMenu(false)}
                 className='w-6 h-6 cursor-pointer text-gray-700'
               />
             </div>
-            
-            <div className='flex flex-col h-full bg-transparent'>
+
+            <div className='flex flex-col h-full bg-white/95 backdrop-blur-sm'>
               <ul className='flex flex-col gap-6 p-6 flex-1'>
                 {navItems.map((item) => (
                   <li key={item.name}>
