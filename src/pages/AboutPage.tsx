@@ -352,8 +352,8 @@ const AboutPage = () => {
               Get started with a free consultation and demo today.
             </p>
             <div className='flex flex-col sm:flex-row gap-4 justify-center'>
-              <Link 
-                to="/book-demo"
+              <Link
+                to="/contact"
                 className='inline-flex items-center space-x-2 bg-[#0075bb] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#005a94] transition-colors duration-300'
               >
                 <Calendar className='w-5 h-5' />
