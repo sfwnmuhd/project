@@ -20,7 +20,7 @@ interface IndustryTemplateProps {
   imageAlt?: string;
 }
 
-const IndustryTemplate = ({ icon, title, description, features, benefits }: IndustryTemplateProps) => {
+const IndustryTemplate = ({ icon, title, description, features, benefits, imageUrl, imageAlt }: IndustryTemplateProps) => {
   return (
     <div className='min-h-screen bg-white'>
       <Navbar />
