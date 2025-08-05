@@ -109,7 +109,7 @@ const AboutPage = () => {
               transition={{ duration: 0.8, delay: 0.1 }}
               className='inline-flex items-center px-6 py-3 bg-blue-100 text-blue-800 rounded-full text-lg font-medium mb-8'
             >
-              🏆 Qatar's #1 ERP Implementation Partner
+              �� Qatar's #1 ERP Implementation Partner
             </motion.div>
 
             <h1 className='text-4xl md:text-6xl font-bold text-gray-900 mb-6'>
@@ -203,6 +203,15 @@ const AboutPage = () => {
               viewport={{ once: true }}
               className='relative'
             >
+              {/* Professional Business Image */}
+              <div className='mb-8'>
+                <img
+                  src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg"
+                  alt="Professional business meeting discussing ERP solutions"
+                  className='w-full h-64 object-cover rounded-2xl shadow-lg'
+                />
+              </div>
+
               <div className='bg-white p-8 rounded-2xl shadow-2xl'>
                 <h3 className='text-2xl font-bold text-gray-800 mb-6'>atAcc ERP Key Modules</h3>
                 <div className='grid grid-cols-1 gap-4'>
