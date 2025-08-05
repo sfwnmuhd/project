@@ -201,27 +201,16 @@ const AboutPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className='relative'
+              className='bg-white p-8 rounded-2xl shadow-2xl'
             >
-              {/* Professional Business Image */}
-              <div className='mb-8'>
-                <img
-                  src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg"
-                  alt="Professional business meeting discussing ERP solutions"
-                  className='w-full h-64 object-cover rounded-2xl shadow-lg'
-                />
-              </div>
-
-              <div className='bg-white p-8 rounded-2xl shadow-2xl'>
-                <h3 className='text-2xl font-bold text-gray-800 mb-6'>atAcc ERP Key Modules</h3>
-                <div className='grid grid-cols-1 gap-4'>
-                  {erpFeatures.slice(5).map((feature, index) => (
-                    <div key={index} className='flex items-center space-x-3 p-3 bg-gray-50 rounded-lg'>
-                      <div className='w-3 h-3 bg-[#0075bb] rounded-full'></div>
-                      <span className='text-gray-700 font-medium text-sm'>{feature}</span>
-                    </div>
-                  ))}
-                </div>
+              <h3 className='text-2xl font-bold text-gray-800 mb-6'>atAcc ERP Key Modules</h3>
+              <div className='grid grid-cols-1 gap-4'>
+                {erpFeatures.slice(5).map((feature, index) => (
+                  <div key={index} className='flex items-center space-x-3 p-3 bg-gray-50 rounded-lg'>
+                    <div className='w-3 h-3 bg-[#0075bb] rounded-full'></div>
+                    <span className='text-gray-700 font-medium text-sm'>{feature}</span>
+                  </div>
+                ))}
               </div>
             </motion.div>
           </div>
