@@ -193,7 +193,7 @@ const Navbar = () => {
         
         {/* Mobile menu */}
         {showMobileMenu && (
-          <div className='md:hidden fixed inset-0 bg-[#edf4fd] z-50 transition-all duration-300 h-1/2'>
+          <div className='md:hidden fixed inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 backdrop-blur-xl z-50 transition-all duration-300 h-1/2'>
             <div className='flex justify-between items-center p-6 border-b border-gray-200'>
               <div className='flex items-center space-x-2'>
                 <img src={logo} alt="Skynet Solution" className='h-8 w-auto' />
