@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { 
@@ -52,7 +51,7 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className='min-h-screen py-20 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center'>
+    <section id="services" className='min-h-screen py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50 flex items-center relative overflow-hidden'>
       <div className='container mx-auto px-6'>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
