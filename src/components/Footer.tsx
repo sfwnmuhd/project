@@ -45,7 +45,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: <Facebook className="w-5 h-5" />, href: '#', name: 'Facebook' },
     { icon: <Linkedin className="w-5 h-5" />, href: '#', name: 'LinkedIn' },
-    { icon: <Instagram className="w-5 h-5" />, href: '#', name: 'Instagram' }
+    { icon: <Instagram className="w-5 h-5" />, href: 'https://www.instagram.com/skynetsolutionqatar/', name: 'Instagram' }
   ]
 
   return (
