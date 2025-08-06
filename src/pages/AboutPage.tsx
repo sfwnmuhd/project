@@ -28,7 +28,7 @@ const AboutPage = () => {
   const features = [
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "Qatar's Leading atAcc ERP Partner",
+      title: "Qatar's Leading atACC ERP Partner",
       description: "Official authorized partner for atAcc ERP implementation in Qatar, providing comprehensive business solutions."
     },
     {
@@ -65,7 +65,7 @@ const AboutPage = () => {
     {
       icon: <Award className="w-6 h-6" />,
       title: "Best ERP Implementation Partner",
-      description: "Recognized for excellence in atAcc ERP implementations across Qatar"
+      description: "Recognized for excellence in atACC ERP implementations across Qatar"
     },
     {
       icon: <Globe className="w-6 h-6" />,
