@@ -76,7 +76,23 @@ const Header = () => {
             </motion.div>
 
             {/* Stats */}
-            
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              className='grid grid-cols-3 gap-8 pt-8 border-t border-gray-200'
+            >
+              {[
+                { number: '1000+', label: 'Happy Clients' },
+                { number: '15+', label: 'Industries' },
+                { number: '12+', label: 'Years Experience' }
+              ].map((stat, index) => (
+                <div key={index} className='text-center'>
+                  <div className='text-2xl font-bold text-gray-900'>{stat.number}</div>
+                  <div className='text-sm text-gray-600 font-medium'>{stat.label}</div>
+                </div>
+              ))}
+            </motion.div>
           </motion.div>
 
           {/* Right Side - ERP Dashboard Illustration */}
