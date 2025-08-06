@@ -93,50 +93,6 @@ const Header = () => {
                 </div>
               ))}
             </motion.div>
-
-            {/* Trusted By Section */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.7 }}
-              className='pt-8'
-            >
-              <div className='text-center mb-6'>
-                <span className='text-sm font-semibold text-gray-500 uppercase tracking-wider'>TRUSTED BY:</span>
-              </div>
-              <div className='flex items-center justify-center flex-wrap gap-6 md:gap-8 lg:gap-12 opacity-60 hover:opacity-80 transition-opacity duration-300'>
-                <img
-                  src="/src/assets/clients/AL RAWABI GROUP.png"
-                  alt="Al Rawabi Group"
-                  className='h-8 md:h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300'
-                />
-                <img
-                  src="/src/assets/clients/asianbc.jpg"
-                  alt="Asian Business Center"
-                  className='h-8 md:h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300'
-                />
-                <img
-                  src="/src/assets/clients/bluebell.jpg"
-                  alt="Bluebell"
-                  className='h-8 md:h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300'
-                />
-                <img
-                  src="/src/assets/clients/best care pharmacy.jpg"
-                  alt="Best Care Pharmacy"
-                  className='h-8 md:h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300'
-                />
-                <img
-                  src="/src/assets/clients/goodwill.jpg"
-                  alt="Goodwill"
-                  className='h-8 md:h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300'
-                />
-                <img
-                  src="/src/assets/clients/lusailinsurance.jpg"
-                  alt="Lusail Insurance"
-                  className='h-8 md:h-10 object-contain grayscale hover:grayscale-0 transition-all duration-300'
-                />
-              </div>
-            </motion.div>
           </motion.div>
 
           {/* Right Side - ERP Dashboard Illustration */}
