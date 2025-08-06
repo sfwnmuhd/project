@@ -33,7 +33,7 @@ const Header = () => {
                 className='text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-900'
               >
                 Transform Your Business with
-                <span className='block text-transparent  bg-gradient-to-r from-blue-600 to-purple-600 mt-2'>
+                <span className='block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mt-2'>
                   atACC ERP Solutions
                 </span>
               </motion.h1>
@@ -42,7 +42,7 @@ const Header = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className='text-xl text-gray-600 leading-relaxed max-w-xl'
+                className='text-xl text-gray-600 leading-relaxed max-w-lg'
               >
                 Streamline operations, boost productivity, and drive growth with Qatar's leading ERP implementation partner. Trusted by 500+ businesses across 15+ industries.
               </motion.p>
