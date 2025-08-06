@@ -109,7 +109,7 @@ const AboutPage = () => {
               transition={{ duration: 0.8, delay: 0.1 }}
               className='inline-flex items-center px-6 py-3 bg-blue-100 text-blue-800 rounded-full text-lg font-medium mb-8'
             >
-              �� Qatar's #1 ERP Implementation Partner
+              Qatar's #1 ERP Implementation Partner
             </motion.div>
 
             <h1 className='text-4xl md:text-6xl font-bold text-gray-900 mb-6'>
