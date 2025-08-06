@@ -165,10 +165,10 @@ const AboutPage = () => {
                 Why atAcc ERP is the <span className='text-[#0075bb]'>Best ERP Software in Qatar</span>
               </h2>
               <p className='text-lg text-gray-600 mb-8 leading-relaxed'>
-                atAcc ERP by Atlanta IT Solutions is a comprehensive Enterprise Resource Planning solution 
+                atACC ERP by Atlanta IT Solutions is a comprehensive Enterprise Resource Planning solution 
                 designed specifically for businesses in Qatar and the Middle East. As the leading atAcc ERP 
                 implementation partner in Qatar, Skynet Solution has successfully deployed this powerful 
-                business management system across 500+ organizations.
+                business management system across 1000+ organizations.
               </p>
               
               <div className='space-y-4 mb-8'>
@@ -203,7 +203,7 @@ const AboutPage = () => {
               viewport={{ once: true }}
               className='bg-white p-8 rounded-2xl shadow-2xl'
             >
-              <h3 className='text-2xl font-bold text-gray-800 mb-6'>atAcc ERP Key Modules</h3>
+              <h3 className='text-2xl font-bold text-gray-800 mb-6'>atACC ERP Key Modules</h3>
               <div className='grid grid-cols-1 gap-4'>
                 {erpFeatures.slice(5).map((feature, index) => (
                   <div key={index} className='flex items-center space-x-3 p-3 bg-gray-50 rounded-lg'>
@@ -228,10 +228,10 @@ const AboutPage = () => {
             className='text-center mb-16'
           >
             <h2 className='text-4xl font-bold text-gray-800 mb-6'>
-              Why Choose Skynet Solution for <span className='text-[#0075bb]'>atAcc ERP in Qatar</span>
+              Why Choose Skynet Solution for <span className='text-[#0075bb]'>atACC ERP in Qatar</span>
             </h2>
             <p className='text-xl text-gray-600 max-w-3xl mx-auto'>
-              As Qatar's most trusted atAcc ERP implementation partner, we bring unmatched expertise 
+              As Qatar's most trusted atACC ERP implementation partner, we bring unmatched expertise 
               and proven success in digital transformation.
             </p>
           </motion.div>
@@ -305,7 +305,7 @@ const AboutPage = () => {
             className='text-center mb-16'
           >
             <h2 className='text-4xl font-bold text-gray-800 mb-6'>
-              Industries We Serve with <span className='text-[#0075bb]'>atAcc ERP Qatar</span>
+              Industries We Serve with <span className='text-[#0075bb]'>atACC ERP Qatar</span>
             </h2>
             <p className='text-xl text-gray-600 max-w-3xl mx-auto'>
               Our expertise spans across multiple industries, making us the preferred choice for 
@@ -348,7 +348,7 @@ const AboutPage = () => {
               Ready to Transform Your Business with the Best ERP Software in Qatar?
             </h2>
             <p className='text-xl text-gray-600 mb-8 max-w-3xl mx-auto'>
-              Join 500+ successful businesses in Qatar who have transformed their operations with atAcc ERP. 
+              Join 1000+ successful businesses in Qatar who have transformed their operations with atACC ERP. 
               Get started with a free consultation and demo today.
             </p>
             <div className='flex flex-col sm:flex-row gap-4 justify-center'>
