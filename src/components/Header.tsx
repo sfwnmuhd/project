@@ -24,14 +24,7 @@ const Header = () => {
             className='flex flex-col justify-center space-y-8'
           >
             <div className='space-y-6'>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                className='inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium'
-              >
-                🚀 Best ERP Software in Qatar
-              </motion.div>
+              
 
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
@@ -41,7 +34,7 @@ const Header = () => {
               >
                 Transform Your Business with
                 <span className='block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mt-2'>
-                  atAcc ERP Solutions
+                  atACC ERP Solutions
                 </span>
               </motion.h1>
 
