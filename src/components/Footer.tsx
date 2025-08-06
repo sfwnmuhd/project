@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion'
 import { 
    
@@ -28,27 +27,25 @@ const Footer = () => {
     ],
     company: [
       { name: 'About Us', href: '#about' },
-      { name: 'Our Team', href: '#about' },
-      { name: 'Careers', href: '#contact' },
-      { name: 'News & Updates', href: '#contact' },
-      { name: 'Case Studies', href: '#contact' },
-      { name: 'Testimonials', href: '#contact' }
+      { name: 'Our Team', href: '#' },
+      { name: 'Careers', href: '#' },
+      { name: 'News & Updates', href: '#' },
+      { name: 'Case Studies', href: '#' },
+      { name: 'Testimonials', href: '#' }
     ],
     support: [
-      { name: 'Contact Us', href: '#contact' },
-      { name: 'Technical Support', href: '#contact' },
-      { name: 'Documentation', href: '#contact' },
-      { name: 'Training', href: '#contact' },
-      { name: 'FAQ', href: '#contact' },
-      { name: 'System Status', href: '#contact' }
+      { name: 'Contact Us', href: '/contact' },
+      { name: 'Technical Support', href: '#' },
+      { name: 'Documentation', href: '#' },
+      { name: 'Training', href: '/contact' },
+      { name: 'FAQ', href: '/contact' }
     ]
   }
 
   const socialLinks = [
     { icon: <Facebook className="w-5 h-5" />, href: '#', name: 'Facebook' },
-    { icon: <Twitter className="w-5 h-5" />, href: '#', name: 'Twitter' },
     { icon: <Linkedin className="w-5 h-5" />, href: '#', name: 'LinkedIn' },
-    { icon: <Instagram className="w-5 h-5" />, href: '#', name: 'Instagram' }
+    { icon: <Instagram className="w-5 h-5" />, href: 'https://www.instagram.com/skynetsolutionqatar/', name: 'Instagram' }
   ]
 
   return (
@@ -72,7 +69,7 @@ const Footer = () => {
               <span className='text-2xl font-bold'>Skynet Solution</span>
             </div>
             <p className='text-gray-300 mb-6 leading-relaxed'>
-              Leading provider of atAcc ERP solutions and expert web development services in Qatar. Transforming businesses with smart software for over 12 years.
+              Leading provider of atACC ERP solutions and expert web development services in Qatar. Transforming businesses with smart software for over 12 years.
             </p>
             
             <div className='space-y-3'>

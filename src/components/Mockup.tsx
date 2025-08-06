@@ -7,17 +7,17 @@ const Mockup = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 1 }}
-      className='container mx-auto flex justify-center items-center mt-8 mb-8 px-6'
+      className='container mx-auto flex justify-center items-center mt-8 mb-8 px-4 sm:px-6 w-full max-w-full overflow-hidden'
     >
       <div className='relative'>
-        <div className='w-full max-w-4xl mx-auto bg-gradient-to-r from-gray-100 to-gray-200 rounded-2xl shadow-2xl p-8'>
+        <div className='w-full max-w-4xl mx-auto bg-gradient-to-r from-gray-100 to-gray-200 rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8'>
           <div className='bg-white rounded-xl shadow-lg overflow-hidden'>
             <div className='bg-gray-800 px-6 py-4 flex items-center space-x-2'>
               <div className='w-3 h-3 bg-red-500 rounded-full'></div>
               <div className='w-3 h-3 bg-yellow-500 rounded-full'></div>
               <div className='w-3 h-3 bg-green-500 rounded-full'></div>
             </div>
-            <div className='p-8'>
+            <div className='p-4 sm:p-6 md:p-8'>
               <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
                 <div className='bg-gradient-to-br from-[#0075bb] to-[#005a94] rounded-lg p-6 text-white'>
                   <h3 className='text-xl font-bold mb-2'>ERP Solutions</h3>

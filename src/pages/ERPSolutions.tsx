@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion'
 import { 
   Database, 
@@ -68,7 +67,7 @@ const ERPSolutions = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-[#f5f7fb] to-[#e8f2ff]">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
