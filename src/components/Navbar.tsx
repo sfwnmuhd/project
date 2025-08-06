@@ -175,6 +175,16 @@ const Navbar = () => {
               <span className='font-medium text-sm lg:text-base hidden lg:inline'>+974 4431 1525</span>
               <span className='font-medium text-sm lg:hidden'>Call</span>
             </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              href="tel:+97444445555"
+              className='flex items-center space-x-1 lg:space-x-2 px-2 lg:px-4 py-2 text-gray-700 hover:text-[#0075bb] transition-colors duration-300'
+            >
+              <Phone className='w-4 h-4' />
+              <span className='font-medium text-sm lg:text-base hidden lg:inline'>+974 4431 1525</span>
+              <span className='font-medium text-sm lg:hidden'>Call</span>
+            </motion.a>
             <Link to="/contact">
               <motion.div
                 whileHover={{ scale: 1.05, backgroundColor: "#005a94" }}
