@@ -20,7 +20,7 @@ import Footer from '../components/Footer'
 const AboutPage = () => {
   const stats = [
     { number: '12+', label: 'Years', subtitle: 'Industry Excellence' },
-    { number: '500+', label: '', subtitle: 'Satisfied Clients' },
+    { number: '1000+', label: '', subtitle: 'Satisfied Clients' },
     { number: '15+', label: '', subtitle: 'Industries Served' },
     { number: '99%', label: '', subtitle: 'Client Satisfaction' },
   ]
