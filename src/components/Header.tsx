@@ -33,7 +33,7 @@ const Header = () => {
                 className='text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-900'
               >
                 Transform Your Business with
-                <span className='block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mt-2'>
+                <span className='block text-transparent  bg-gradient-to-r from-blue-600 to-purple-600 mt-2'>
                   atACC ERP Solutions
                 </span>
               </motion.h1>
