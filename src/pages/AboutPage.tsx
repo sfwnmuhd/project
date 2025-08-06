@@ -116,7 +116,7 @@ const AboutPage = () => {
               Best <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600'>ERP Software</span> in Qatar
             </h1>
             <p className='text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8'>
-              Skynet Solution is Qatar's premier atAcc ERP implementation partner, delivering comprehensive
+              Skynet Solution is Qatar's premier atACC ERP implementation partner, delivering comprehensive
               business management solutions for over 12 years. Transform your business with the best ERP software in Qatar.
             </p>
             <div className='flex flex-wrap justify-center gap-4 text-lg font-semibold text-gray-700'>
