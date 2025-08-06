@@ -42,7 +42,7 @@ const Header = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className='text-xl text-gray-600 leading-relaxed max-w-lg'
+                className='text-xl text-gray-600 leading-relaxed max-w-xl'
               >
                 Streamline operations, boost productivity, and drive growth with Qatar's leading ERP implementation partner. Trusted by 500+ businesses across 15+ industries.
               </motion.p>
