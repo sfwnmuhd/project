@@ -162,7 +162,7 @@ const AboutPage = () => {
               viewport={{ once: true }}
             >
               <h2 className='text-4xl font-bold text-gray-800 mb-6'>
-                Why atAcc ERP is the <span className='text-[#0075bb]'>Best ERP Software in Qatar</span>
+                Why atACC ERP is the <span className='text-[#0075bb]'>Best ERP Software in Qatar</span>
               </h2>
               <p className='text-lg text-gray-600 mb-8 leading-relaxed'>
                 atACC ERP by Atlanta IT Solutions is a comprehensive Enterprise Resource Planning solution 
@@ -191,7 +191,7 @@ const AboutPage = () => {
                 to="/contact"
                 className='inline-flex items-center space-x-2 bg-[#0075bb] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#005a94] transition-colors duration-300'
               >
-                <span>Get Free atAcc ERP Demo</span>
+                <span>Get Free atACC ERP Demo</span>
                 <ArrowRight className='w-5 h-5' />
               </Link>
             </motion.div>
