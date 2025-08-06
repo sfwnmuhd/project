@@ -120,7 +120,7 @@ const AboutPage = () => {
               business management solutions for over 12 years. Transform your business with the best ERP software in Qatar.
             </p>
             <div className='flex flex-wrap justify-center gap-4 text-lg font-semibold text-gray-700'>
-              <span className='bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-white/20'>atAcc ERP Qatar</span>
+              <span className='bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-white/20'>atACC ERP Qatar</span>
               <span className='bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-white/20'>Best ERP Software Qatar</span>
               <span className='bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-white/20'>ERP Implementation</span>
             </div>
